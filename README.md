@@ -1,7 +1,7 @@
 # Media_Fox
 A php uploader with extra features.
 
-# Done
+### Done
 Profile System  
 Sign up for new users (new users either sign up or continue as guests)  
 Multiple File Upload ( max 2GB uploads for Guests)  
@@ -16,7 +16,7 @@ View uploaded files (Guests can only access public files)
 Link Expiry  
 Video Upload and Streaming  
 
-# TO-DO
+### TO-DO
 Check for duplicate files while uploading  
 Delete your files (only registered users)  
 Advertisements  
