@@ -23,6 +23,6 @@ Video Upload and Streaming
 
 ### TO-DO
 Check for duplicate files while uploading  
-Link Expiry (after certain time)
-Email download link
+Link Expiry (after certain time)  
+Email download link  
 Share files with another user just by entering username/name/email_id
