@@ -1,8 +1,8 @@
 # Media_Fox
-A php uploader with extra features.
+A php based file and directory uploader
 
 ### Set-Up
-Copy the folder to htdocs of your xamp directory  
+Copy the folder to htdocs of your xampp directory  
 Import the "ftusers.sql" from the folder to your mysql server  
 Change upload limits in php.ini as per your usage   
 
@@ -18,8 +18,11 @@ Password Protection of download link
 Short Link  
 Sharing (Public/Private/Unlisted)    
 View uploaded files (Guests can only access public files)  
-Link Expiry  
+Link Expiry (after specified number of downloads)
 Video Upload and Streaming  
 
 ### TO-DO
 Check for duplicate files while uploading  
+Link Expiry (after certain time)
+Email download link
+Share files with another user just by entering username/name/email_id
