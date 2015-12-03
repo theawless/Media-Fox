@@ -2,9 +2,9 @@
 A php uploader with extra features.
 
 ### Set-Up
-Copy the folder to htdocs of your xamp directory
-Import the "ftusers.sql" from the folder to your mysql server
-Change upload limits in php.ini as per your usage 
+Copy the folder to htdocs of your xamp directory  
+Import the "ftusers.sql" from the folder to your mysql server  
+Change upload limits in php.ini as per your usage   
 
 ### Done
 Profile System  
