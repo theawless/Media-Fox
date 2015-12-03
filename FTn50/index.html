@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+
+
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+   <title style="color:black; ">MediaFox</title>
+
+	<link rel="stylesheet" type="text/css" href="css/pure-min.css">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+
+	<!--STYLESHEETS-->
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+  <script src="js/js_upload1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+<!--Slider-in icons-->
+<script type="text/javascript">
+$(document).ready(function() {
+	$(".username").focus(function() {
+		$(".user-icon").css("left","-48px");
+	});
+	$(".username").blur(function() {
+		$(".user-icon").css("left","0px");
+	});
+	
+	$(".password").focus(function() {
+		$(".pass-icon").css("left","-48px");
+	});
+	$(".password").blur(function() {
+		$(".pass-icon").css("left","0px");
+	});
+});
+</script>
+
+
+    <script>
+    function validateForm()
+    {
+    var a=document.forms["signup-form"]["username"].value;
+    var b=document.forms["signup-form"]["email"].value;
+    var c=document.forms["signup-form"]["password"].value;
+    if ((a==null || a=="") && (b==null || b=="") && (c==null || c=="") )
+      {
+      alert("All Field must be filled out");
+      return false;
+      }
+    if (b==null || b=="")
+      {
+      alert("Email must be filled out");
+      return false;
+      }
+    if (c==null || c=="")
+      {
+      alert("Password must be filled out");
+      return false;
+      }
+    </script>
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+  							<!-- Modal for Login -->
+  <div class="modal fade" id="loginModal" role="dialog">
+         <!-- WRAPPER-->    
+<div class="model-content" >
+    <div class="modal-dialog">
+
+<!--LOGIN FORM-->
+<form name="login-form" class="login-form" action="session/login.php" method="post">
+
+	<!--HEADER-->
+    <div class="header">
+    <!--TITLE--><h1>MediaFox</h1><!--END TITLE-->
+    <!--DESCRIPTION--><span>Sign in with your work or school account</span><!--END DESCRIPTION-->
+    </div>
+    <!--END HEADER-->
+	
+	<!--CONTENT-->
+    <div class="content">
+	<!--USERNAME--><input name="username" id="myusername" type="text" class="input username" value="username" onfocus="this.value=''" /><!--END USERNAME-->
+    <!--PASSWORD--><input name="password" id="mypassword" type="password" class="input password" value="password" onfocus="this.value=''" /><!--END PASSWORD-->
+    </div>
+    <!--END CONTENT-->
+    
+    <!--FOOTER-->
+    <div class="footer">
+    <!--LOGIN BUTTON--><input type="submit" name="submit" value="Login" class="button" /><!--END LOGIN BUTTON-->
+    </div>
+    <!--END FOOTER
+      <div class="modal-content">
+         <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">-->
+
+</form>
+<!--END LOGIN FORM-->
+<!--END WRAPPER-->
+<!--GRADIENT--><div class="gradient"></div><!--END GRADIENT-->
+     </div>
+   </div>
+</div>
+
+
+
+
+
+
+  							<!-- Modal for Sign Up -->
+
+  <div class="modal fade" id="signupModal" role="dialog">
+         <!-- WRAPPER-->    
+<div class="model-content" >
+    <div class="modal-dialog">
+
+<!--Signup FORM-->
+<form name="signup-form" action="registration.php" class="login-form" onsubmit="return validateForm()" method="post">
+
+	<!--HEADER-->
+    <div class="header">
+    <!--TITLE--><h1>Register</h1><!--END TITLE-->
+    <!--DESCRIPTION--><span>Create your MediaFox account</span><!--END DESCRIPTION-->
+    </div>
+    <!--END HEADER-->
+	<!--CONTENT-->
+    <div class="content">
+	<!--USERNAME--><input name="username" type="text" class="input username" id="username" value="username" placeholder="Username" onfocus="this.value=''" /><!--END USERNAME-->
+	<!--USERNAME--><input name="email" type="email" class="input username" id="email" value="email" placeholder="Enter your email id" onfocus="this.value=''" /><!--END USERNAME-->
+    <!--PASSWORD--><input name="password" type="password" class="input password" id="password" value="password" onfocus="this.value=''" /><!--END PASSWORD-->
+    </div>
+    <!--END CONTENT-->
+    
+    <!--FOOTER-->
+    <div class="footer">
+    <!--LOGIN BUTTON--><input type="submit" name="submit" value="Create Account" class="button" /><!--END LOGIN BUTTON-->
+    </div>
+    <!--END FOOTER
+      <div class="modal-content">
+         <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">-->
+
+</form>
+<!--END LOGIN FORM-->
+<!--END WRAPPER-->
+<!--GRADIENT--><div class="gradient"></div><!--END GRADIENT-->
+     </div>
+   </div>
+</div>
+
+
+
+
+
+
+  							<!-- Modal for "File Uploader" form -->
+
+<div class="modal fade" id="uploadModal" role="dialog">
+         <!-- WRAPPER-->    
+  <div class="model-content" >
+    <div class="modal-dialog">
+	<br></br><br></br><br></br>
+	<form name="upload-form" action="uploader.php" class="upload-form" enctype="multipart/form-data" method="post">
+    		<div class="header"><h1>Upload Your File</h1></div>
+    		<div class="content">
+			<div class="status"></div>
+			<div class="footer">
+				<input type="file" name="files[]" multiple="multiple" id="files">
+				<input type="submit" name="submit" value="Upload" class="button" />
+			</div>
+    		</div>
+    		
+
+	<div class="progress">
+		<div class="bar"></div >
+		<div class="percent">0%</div >
+	</div>
+	</form>
+	<br></br><br></br>
+     </div>
+
+	<!-- javascript dependencies -->
+	<script type="text/javascript" src="js/js_upload/jquery.form.min.js"></script>
+	<script type="text/javascript" src="js/js_upload/jquery.min.js"></script>
+	<!-- main script -->
+	<script type="text/javascript" src="js/script.js"></script>
+
+
+   </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+
+       <div class="container-fluid">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
+                    <span class="sr-only">Toggle navigation</span>
+
+                    <span class="icon-bar"></span>
+
+                    <span class="icon-bar"></span>
+
+                    <span class="icon-bar"></span>
+
+                </button>
+
+                <a class="navbar-brand page-scroll" href="index.html">MediaFox</a>
+
+            </div>
+
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+          <ul class="nav navbar-nav navbar-right">
+
+             <li><a class="page-scroll" data-toggle="modal" href="#">About</a></li>
+
+             <li><a class="page-scroll" data-toggle="modal" href="#loginModal">Sign in</a></li>
+
+             <li><a class="page-scroll" data-toggle="modal" href="#signupModal">Register</a>
+</li>
+
+             <li>
+<a class="page-scroll" href="contact.php">Contact</a>
+</li>
+
+          </ul>
+
+        </div>
+
+            <!-- /.navbar-collapse -->
+
+       </div>
+
+        <!-- /.container-fluid -->
+
+    </nav>
+
+
+
+
+
+
+
+    <header>
+
+        <div class="header-content" >
+
+            <div class="header-content-inner" >
+
+                <h1>Send large files - fast, easy & secure <?php  $site_domain ?> </h1>
+
+                <hr></hr>
+
+                <p>DON'T HAVE ANCCOUNT? YOU CAN STILL UPLOAD</p>
+                <a href="redirect_to_upload.php"  style="background:darkred" class="btn btn-primary btn-xl page-scroll">Click here to upload your files</a>
+
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    
+  
+</body>
+
+</html>
