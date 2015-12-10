@@ -18,7 +18,7 @@ Password Protection of download link
 Short Link  
 Sharing (Public/Private/Unlisted)    
 View uploaded files (Guests can only access public files)  
-Link Expiry (after specified number of downloads)
+Link Expiry (after specified number of downloads)  
 Video Upload and Streaming  
 
 ### TO-DO
